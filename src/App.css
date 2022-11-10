@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+section{
+  padding: 0 100px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.img-div{
+  width: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.img-div img{
+  width: 100%;
+  margin-top: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.arrow{
+  width: 20px;
+  display: inline;
+  position: relative;
+  top: 5px;
+}
+.single-content{
+  padding: 10px 5px;
+}
+.link-name{
+  display: inline;
+  cursor: pointer;
+}
+.link{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0 10px;
+}
+.swiper-button-next {
+  background-image: url('images/arrow-right-circle.svg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+.swiper-button-prev {
+  background-image: url('images/arrow-left-circle.svg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+.swiper-button-next::after, .swiper-button-prev::after{
+  display: none;
+}
+select{
+  padding: 5px 10px;
+    box-shadow: 5px 5px 2px #eeeeee;
+    max-width: 400px;
+    min-width: 100px;
+    border-radius: 10px;
+    margin-right: 2rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (max-width: 640px){
+    section{
+      padding: 0 60px;
+    }
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.single-content p{
+  margin: 5px 0;
 }
